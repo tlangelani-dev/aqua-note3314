@@ -15,10 +15,11 @@ use Symfony\Component\HttpFoundation\Response;
 class GenusController
 {
     /**
-     * @Route("/genus")
+     * @Route("/genus/{name}")
+     *
      */
-    public function showAction()
+    public function showAction($name)
     {
-        return new Response('Hello');
+        return new Response('You selected: ' . $name);
     }
 }
