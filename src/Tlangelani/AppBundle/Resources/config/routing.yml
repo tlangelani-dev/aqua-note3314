@@ -1,3 +1,7 @@
 tlangelani_app_homepage:
     path:     /
     defaults: { _controller: TlangelaniAppBundle:Default:index }
+
+tlangelani_app_contact:
+    path:     /contact
+    defaults: { _controller: TlangelaniAppBundle:Default:contact }

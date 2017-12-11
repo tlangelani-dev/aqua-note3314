@@ -10,4 +10,9 @@ class DefaultController extends Controller
     {
         return $this->render('TlangelaniAppBundle:Default:index.html.twig');
     }
+
+    public function contactAction()
+    {
+        return $this->render('TlangelaniAppBundle:Default:contact.html.twig');
+    }
 }
