@@ -17,14 +17,14 @@ class GenusController extends Controller
 {
     /**
      * @Route("/genus/{name}")
+     * @param string $name The name of genus
      *
+     * @return Response A responce instance
      */
     public function showAction($name)
     {
-        $template = $this->container->get('templating');
-        $html = $template->render('genus/show.html.twig', [
+        return $this->render('genus/show.html.twig', [
             'name' => $name
         ]);
-        return new Response($html);
     }
 }
