@@ -1,1 +1,8 @@
-<h3>Genus</h3>
+<h3>Genus {{ name }}</h3>
+<ul>
+    {% for note in notes %}
+        <li>{{ note }}</li>
+    {% endfor %}
+</ul>
+
+{{ dump() }}

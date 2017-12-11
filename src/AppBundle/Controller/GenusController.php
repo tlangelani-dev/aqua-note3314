@@ -24,7 +24,8 @@ class GenusController extends Controller
     public function showAction($name)
     {
         return $this->render('genus/show.html.twig', [
-            'name' => $name
+            'name' => $name,
+            'notes' => ['Freedom', 'Attitude', 'Accountability', 'Energy']
         ]);
     }
 }
